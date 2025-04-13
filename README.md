@@ -1,9 +1,27 @@
-# ArchLinux logout
+# archlinux-logout
 
-This app depends on the following packages.
+Graphical logout and lock screen utility for Arch Linux, maintained by Sugarcrisp-ui.
 
-depends=('python-psutil' 'libwnck3' 'python-cairo' 'betterlockscreen' 'python-distro')
+## Dependencies
 
+- python
+- python-gobject
+- libwnck3
+- python-psutil
+- python-cairo
+- python-distro
+- i3lock-color
+- betterlockscreen (optional, for enhanced lock screen features)
+
+## Installation
+
+```bash
+git clone https://github.com/Sugarcrisp-ui/archlinux-logout.git
+cd archlinux-logout
+makepkg -si
+
+If symlink fails, run the following
+ln -sf ~/dotfiles/.config/archlinux-logouts/archlinux-logout.conf ~/.config/archlinux-logout/archlinux-logout.conf
 
 This widget, displays a transparent window allowing quick access to various power features:
 
